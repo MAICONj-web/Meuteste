@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Multiempresa Soma - Serviços Automotivos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        .login-container, .services-container {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .login-container h2, .services-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .login-container input, .login-container button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .login-container button {
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            border: none;
+        }
+        .login-container a {
+            display: block;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+            text-align: center;
+        }
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+        .services-container ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .services-container li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .services-container li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <h2>Portal Multiempresa Soma</h2>
+            <form action="/portalmultiempresa/login" method="POST">
+                <input type="text" name="usuario" placeholder="Usuário" required>
+                <input type="password" name="senha" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <a href="#">Esqueceu a senha?</a>
+            <a href="#">Cadastre-se</a>
+        </div>
+        <div class="services-container">
+            <h2>Serviços de Remoção e Instalação</h2>
+            <ul>
+                <li>Remoção e instalação de motor</li>
+                <li>Remoção e instalação de caixa de câmbio</li>
+                <li>Remoção e instalação de suspensão</li>
+                <li>Remoção e instalação de freios</li>
+                <li>Remoção e instalação de sistema de escapamento</li>
+                <li>Remoção e instalação de ar condicionado</li>
+                <li>Remoção e instalação de bateria</li>
+                <li>Remoção e instalação de radiador</li>
+                <li>Remoção e instalação de alternador</li>
+                <li>Remoção e instalação de faróis e lanternas</li>
+                <!-- Adicione mais serviços conforme necessário -->
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
